@@ -1,0 +1,71 @@
+.w3-transition-05 {
+	transition: 0.5s;
+}
+.main-bar {
+	padding:2px 0 0 0;
+	color:white;
+	/*background: rgb(2,0,36);*/
+	/*background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(75,8,199,1) 48%, rgba(91,100,255,1) 83%);*/
+}
+.thought-container{
+	margin:20px 10px;
+	font-size:35px;
+	padding:40px 0px;
+}
+body{
+	margin:0;
+	padding:0;
+}
+section.zoom{
+	width:100%;
+	height:1000px;
+	position:relative;
+	overflow:hidden;
+	background: url('/images/bg.jpg');
+	background-size: cover;
+	background-position: center;
+}
+section.zoom:before{
+	content:'';
+	position: absolute;
+	bottom:0;
+	width:100%;
+	height:200px;
+	z-index:1000;
+	background: linear-gradient(transparent,#fff);
+}
+section.zoom .layer1{
+	width:100%;
+	/*top:0;*/
+	position: absolute;
+	left:40%;
+	transform: translateX(-50%);
+}
+section.zoom .layer2{
+	position: absolute;
+	/*top:0;*/
+	right:0;	
+	width:100%;
+}
+
+section.zoom .text{
+	width:100%;
+	/*top:0;*/
+	position: absolute;
+	right:0;
+	transform: translateY(50%);
+}
+section.content{
+	padding:100px;
+	box-sizing: border-box;
+	font-family: consolas;
+}
+section.content h2{
+	padding:0;
+	margin:0;
+	font-size: 4em;
+}
+section.content p{
+	font-size:1.2em;
+
+}
