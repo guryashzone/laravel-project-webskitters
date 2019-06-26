@@ -1,4 +1,49 @@
-﻿/* W3.CSS 4.10 February 2018 by Jan Egil and Borge Refsnes */
+﻿@import url('https://fonts.googleapis.com/css?family=Merienda|Merienda+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Knewave&display=swap');
+.w3-font-kaushan {
+	font-family: 'Kaushan Script', cursive;
+}
+.w3-font-knewave {
+	font-family: 'Knewave', cursive;
+}
+.w3-font-merienda {
+	font-family: 'Merienda', cursive;
+}
+.w3-font-merienda-one {
+	font-family: 'Merienda One', cursive;
+}
+.w3-cursor{
+	cursor: pointer;
+}
+.btn-rotate-left:hover{
+	transform: perspective(200px) rotateY(15deg);
+}
+.btn-rotate-right:hover{
+	margin-right: -15px;
+	transform: perspective(200px) rotateY(-15deg);
+}
+.btn-shine {
+	 /*position: absolute;*/
+	 overflow:hidden;
+	 transition:0.5s;
+}
+.btn-shine:hover {
+	transform: perspective(500px) rotateY(15deg);
+}
+.btn-shine:before {
+	content:'';
+	position:absolute;
+	top:0;
+	left:-100%;
+	width:100%;
+	height:100%;
+	background: linear-gradient(90deg, transparent, #fff, transparent );
+	transition:0.5s;
+}
+.btn-shine:hover:before {
+	left:100%;
+}
+/* W3.CSS 4.10 February 2018 by Jan Egil and Borge Refsnes */
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}

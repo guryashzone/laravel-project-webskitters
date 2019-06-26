@@ -12,3 +12,11 @@
 */
 
 Route::get('','IndexController@index');
+Route::get('/about','IndexController@about');
+
+Auth::routes();
+
+Route::get('', 'HomeController@index')->name('index');
+// Route::get('', function(){
+	// return view('index');
+// });
