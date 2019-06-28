@@ -390,5 +390,6 @@ Offers
         <br>
         <br>
        </div>
+       @include('searchBox')
        <br>
 @endsection

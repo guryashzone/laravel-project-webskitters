@@ -284,8 +284,8 @@
                             </span>
                             <br>
                             <p class="w3-opacity">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quidem sunt vero rerum sit voluptates aperiam vitae non, itaque labore ullam.
-                            </p>
+                                       Located in the contours of Kolkata, Grand Castle is the Dominant Player in the Realty Market. Life at Grand Castle is like a Dream Come True.
+                             </p>
                             <div class="w3-opacity-max">
                                 <i class="fa fa-map-signs offer-cont-icon"></i>
                                 <i class="fa fa-globe offer-cont-icon"></i>
@@ -323,7 +323,7 @@
                             </span>
                             <br>
                             <p class="w3-opacity">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quidem sunt vero rerum sit voluptates aperiam vitae non, itaque labore ullam.
+                            Turkey Hill Dairy, or simply known as Turkey Hill, is an American brand of iced tea, ice cream and other beverages and frozen desserts distributed throughout the United States and internationally
                             </p>
                             <div class="w3-opacity-max">
                                 <i class="fa fa-map-signs offer-cont-icon"></i>
@@ -354,7 +354,7 @@
                         <div class="w3-display-container offer-cont-2">
                             <img src="{{asset('images/offer_3.jpg')}}" class="offer-cont-image-1" alt="loading..">
                             <div class="w3-display-bottomleft w3-orange w3-text-white offer-cont-3">
-                                <b>ISLAND DREAM</b>
+                                <b>ZURICH</b>
                             </div>
                         </div>
                     </div>
@@ -376,7 +376,7 @@
                             </span>
                             <br>
                             <p class="w3-opacity">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quidem sunt vero rerum sit voluptates aperiam vitae non, itaque labore ullam.
+                                The city of Zurich, a global center for banking and finance, lies at the north end of Lake Zurich in northern Switzerland. The picturesque lanes of the central Altstadt (Old Town), on either side of the Limmat River, reflect its pre-medieval history.
                             </p>
                             <div class="w3-opacity-max">
                                 <i class="fa fa-map-signs offer-cont-icon"></i>
@@ -393,7 +393,7 @@
                         <div class="w3-display-container offer-cont-2">
                             <img src="{{asset('images/offer_4.jpg')}}" class="offer-cont-image-1" alt="loading..">
                             <div class="w3-display-bottomleft w3-orange w3-text-white offer-cont-3">
-                                <b>TRAVEL LIGHT</b>
+                                <b>GOA</b>
                             </div>
                         </div>
                     </div>
@@ -415,7 +415,7 @@
                             </span>
                             <br>
                             <p class="w3-opacity">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quidem sunt vero rerum sit voluptates aperiam vitae non, itaque labore ullam.
+                                Goa is a state in western India with coastlines stretching along the Arabian Sea. Its long history as a Portuguese colony prior to 1961 is evident in its preserved 17th-century churches and the area’s tropical spice plantations.                      
                             </p>
                             <div class="w3-opacity-max">
                                 <i class="fa fa-map-signs offer-cont-icon"></i>

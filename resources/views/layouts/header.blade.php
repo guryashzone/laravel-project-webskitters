@@ -23,6 +23,9 @@
 		@else
 			<a href="/login" class="main-bar-item w3-hover-shadow w3-right w3-bar-item w3-btn w3-transition-05 w3-opacity-min w3-orange w3-text-white w3-hover-opacity-off w3-padding"> LOG IN </a>
 		@endif
+		@if($user = Auth::user())
+		<a href="/bookings" class="main-bar-item btn-rotate-right w3-right w3-bar-item w3-btn w3-transition-05 w3-opacity-min w3-cyan w3-text-white w3-hover-opacity-off w3-padding"> BOOKINGS </a>
+		@endif
 		<a href="/contact" class="main-bar-item btn-rotate-right w3-right w3-bar-item w3-btn w3-transition-05 w3-opacity-min w3-green w3-hover-opacity-off w3-padding"> CONTACT </a>
 		<a href="/offers" class="main-bar-item btn-rotate-right w3-right w3-bar-item w3-btn w3-transition-05 w3-opacity-min w3-blue w3-hover-opacity-off w3-padding"> OFFERS </a>
 		<a href="/about" class="main-bar-item btn-rotate-right w3-right w3-bar-item w3-btn w3-transition-05 w3-opacity-min w3-red w3-hover-opacity-off w3-padding"> ABOUT US </a>
