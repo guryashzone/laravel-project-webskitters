@@ -81,6 +81,58 @@
   z-index: 10;
   display: inline-block;
 }
+.offer-cont-1{
+	padding:5px 30px;
+}
+.offer-cont-2{
+	height:300px;
+}
+.offer-cont-image-1{
+	width:100%;
+	height: 100%;
+}
+.offer-cont-3{
+	margin-bottom:28px;
+	padding:5px 20px; 
+}
+.offer-cont-icon {
+	font-size: 18px;
+	margin-right:5px;
+}
+.trending-blog-image-col {
+	padding:0px 10px;
+}
+.trending-blog-image{
+	width:100%;
+	height:70px;
+	background-position: center;
+	background-size: cover;
+	overflow: hidden; 
+}
+.trend-image-01{
+	background-image: url('/images/trend_1.png');
+}
+.trend-image-02{
+	background-image: url('/images/trend_2.png');
+}
+.trend-image-03{
+	background-image: url('/images/trend_3.png');
+}
+.trend-image-04{
+	background-image: url('/images/trend_4.png');
+}
+.trend-image-05{
+	background-image: url('/images/trend_5.png');
+}
+.trend-image-06{
+	background-image: url('/images/trend_6.png');
+}
+.trend-image-07{
+	background-image: url('/images/trend_7.png');
+}
+.trend-image-08{
+	background-image: url('/images/trend_8.png');
+}
 .footer-col-container{
 	padding:32px 16px;
 }
@@ -91,6 +143,10 @@
 	border: 2px dotted red;
 	border-radius: 50%;
 	margin:10px 5px;
+}
+.footer-social-item:hover {
+	transform: rotateZ(360deg) scale(1.5);
+	border-style: solid;
 }
 .footer-blog-image-col {
 	padding:0px 15px;
@@ -136,6 +192,10 @@
 }
 .booking-container select,input {
 	height:3em;
+}
+.package-view-container img {
+	height:500px;
+	width:100%;
 }
 body{
 	margin:0;

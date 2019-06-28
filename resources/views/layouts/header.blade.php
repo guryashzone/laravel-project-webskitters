@@ -5,6 +5,7 @@
 	<title> 
 		@yield('title', 'Laravel')
 	</title>
+	<meta name="csrf-token" content="{{ csrf_token() }}">
 	<link rel="icon" href ="{{ asset('images/156138187515450658.gif') }}" type="image/x-icon"> 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="{{ asset('css/w3.css') }}">
@@ -22,21 +23,193 @@
 		@else
 			<a href="/login" class="main-bar-item w3-hover-shadow w3-right w3-bar-item w3-btn w3-transition-05 w3-opacity-min w3-orange w3-text-white w3-hover-opacity-off w3-padding"> LOG IN </a>
 		@endif
-		<a href="#" class="main-bar-item btn-rotate-right w3-right w3-bar-item w3-btn w3-transition-05 w3-opacity-min w3-green w3-hover-opacity-off w3-padding"> CONTACT </a>
-		<a href="#" class="main-bar-item btn-rotate-right w3-right w3-bar-item w3-btn w3-transition-05 w3-opacity-min w3-blue w3-hover-opacity-off w3-padding"> OFFERS </a>
+		<a href="/contact" class="main-bar-item btn-rotate-right w3-right w3-bar-item w3-btn w3-transition-05 w3-opacity-min w3-green w3-hover-opacity-off w3-padding"> CONTACT </a>
+		<a href="/offers" class="main-bar-item btn-rotate-right w3-right w3-bar-item w3-btn w3-transition-05 w3-opacity-min w3-blue w3-hover-opacity-off w3-padding"> OFFERS </a>
 		<a href="/about" class="main-bar-item btn-rotate-right w3-right w3-bar-item w3-btn w3-transition-05 w3-opacity-min w3-red w3-hover-opacity-off w3-padding"> ABOUT US </a>
 		<a href="/" class="main-bar-item btn-rotate-right w3-right w3-bar-item w3-btn w3-transition-05 w3-opacity-min w3-teal w3-hover-opacity-off w3-padding"> HOME </a>
 	</div>
 	<div class="w3-bar main-bar w3-transparent" style="margin-top: 10px">
-		<div class="w3-bar-item w3-text-white w3-font-kaushan logo-main w3-cursor w3-transparent w3-animate-left w3-jumbo">
+		<div class="w3-bar-item w3-text-white w3-font-kaushan logo-main w3-cursor w3-transparent w3-animate-left w3-jumbo" style="text-shadow:6px 6px 7px #000;">
 			{{ config('app.name', 'Laravel') }}<span class="fa fa-paper-plane w3-large" style="vertical-align: top"></span>
 		</div>
 	</div>
 	{{-- Header ends --}}
 	@yield('content')
 	{{-- Trending conatiner --}}
-	
+	<br>
+	<div class="w3-center w3-jumbo w3-padding w3-margin-bottom w3-font-kaushan">
+		<b>Trending now</b>
+	</div>
+	<br>
+	<div class="w3-row">
+		<div class="w3-col l1 m12 s12">
+			<br>
+		</div>
+		<div class="w3-col l10 m12 s12">
+			<div class="w3-col l3 m6 s12">
+				<div class="w3-padding">
+					<div class="w3-row">
+						<div class="w3-col l4 m4 s12 trending-blog-image-col">
+							<div class="trending-blog-image trend-image-01"></div>
+						</div>
+						<div class="w3-col l8 m4 s12">
+							<b class="w3-block w3-large">GRAND HOTEL</b>
+							<span class="w3-text-red w3-block w3-small">
+								From <i class="fa fa-inr"></i> 6500
+							</span>
+							<span class="w3-opacity w3-block">
+								Agra, INDIA
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="w3-col l3 m6 s12">
+				<div class="w3-padding">
+					<div class="w3-row">
+						<div class="w3-col l4 m4 s12 trending-blog-image-col">
+							<div class="trending-blog-image trend-image-02"></div>
+						</div>
+						<div class="w3-col l8 m4 s12">
+							<b class="w3-block w3-large">MARIA CRISTINA</b>
+							<span class="w3-text-red w3-block w3-small">
+								From <i class="fa fa-inr"></i> 5500
+							</span>
+							<span class="w3-opacity w3-block">
+								Delhi, INDIA
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="w3-col l3 m6 s12">
+				<div class="w3-padding">
+					<div class="w3-row">
+						<div class="w3-col l4 m4 s12 trending-blog-image-col">
+							<div class="trending-blog-image trend-image-03"></div>
+						</div>
+						<div class="w3-col l8 m4 s12">
+							<b class="w3-block w3-large">WICKANINNISH</b>
+							<span class="w3-text-red w3-block w3-small">
+								From <i class="fa fa-inr"></i> 9900
+							</span>
+							<span class="w3-opacity w3-block">
+								Tifino, COLUMBIA
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="w3-col l3 m6 s12">
+				<div class="w3-padding">
+					<div class="w3-row">
+						<div class="w3-col l4 m4 s12 trending-blog-image-col">
+							<div class="trending-blog-image trend-image-04"></div>
+						</div>
+						<div class="w3-col l8 m4 s12">
+							<b class="w3-block w3-large">THE SETAI</b>
+							<span class="w3-text-red w3-block w3-small">
+								From <i class="fa fa-inr"></i> 7700
+							</span>
+							<span class="w3-opacity w3-block">
+								Miami, USA
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="w3-col l1 m12 s12">
+			<br>
+		</div>
+	</div>
+	<br>
+	<div class="w3-row">
+		<div class="w3-col l1 m12 s12">
+			<br>
+		</div>
+		<div class="w3-col l10 m12 s12">
+			<div class="w3-col l3 m6 s12">
+				<div class="w3-padding">
+					<div class="w3-row">
+						<div class="w3-col l4 m4 s12 trending-blog-image-col">
+							<div class="trending-blog-image trend-image-05"></div>
+						</div>
+						<div class="w3-col l8 m4 s12">
+							<b class="w3-block w3-large">EMIRATES</b>
+							<span class="w3-text-red w3-block w3-small">
+								From <i class="fa fa-inr"></i> 8900
+							</span>
+							<span class="w3-opacity w3-block">
+								Dubai, UAE
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="w3-col l3 m6 s12">
+				<div class="w3-padding">
+					<div class="w3-row">
+						<div class="w3-col l4 m4 s12 trending-blog-image-col">
+							<div class="trending-blog-image trend-image-06"></div>
+						</div>
+						<div class="w3-col l8 m4 s12">
+							<b class="w3-block w3-large">THE QUEEN</b>
+							<span class="w3-text-red w3-block w3-small">
+								From <i class="fa fa-inr"></i> 10500
+							</span>
+							<span class="w3-opacity w3-block">
+								London, UK
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="w3-col l3 m6 s12">
+				<div class="w3-padding">
+					<div class="w3-row">
+						<div class="w3-col l4 m4 s12 trending-blog-image-col">
+							<div class="trending-blog-image trend-image-07"></div>
+						</div>
+						<div class="w3-col l8 m4 s12">
+							<b class="w3-block w3-large">THE BOULDERS</b>
+							<span class="w3-text-red w3-block w3-small">
+								From <i class="fa fa-inr"></i> 6500
+							</span>
+							<span class="w3-opacity w3-block">
+								Arizona, USA
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="w3-col l3 m6 s12">
+				<div class="w3-padding">
+					<div class="w3-row">
+						<div class="w3-col l4 m4 s12 trending-blog-image-col">
+							<div class="trending-blog-image trend-image-08"></div>
+						</div>
+						<div class="w3-col l8 m4 s12">
+							<b class="w3-block w3-large">PALMS</b>
+							<span class="w3-text-red w3-block w3-small">
+								From <i class="fa fa-inr"></i> 8500
+							</span>
+							<span class="w3-opacity w3-block">
+								Las Vegas, USA
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="w3-col l1 m12 s12">
+			<br>
+		</div>
+	</div>
 	{{-- Trending conatiner Ends--}}
+	<br>
+	<br>
+	<br>
 	{{-- Footer begins --}}
 	<div class="footer w3-row inspire-01">
 		<div class="w3-col l1 m12 s12">
@@ -52,19 +225,19 @@
 						<b class="w3-text-red">{{ config('app.name', 'Laravel') }}</b><span style="vertical-align: super" class="w3-tiny">®</span> is a trusted brand in tour and travels industry which basically focuses on customer review system for customer's advantage to deliver best travel experience. Our association with A class hotels and flights provide best travelling experience which can be seen in our social handles.
 					</p>
 					<div class="footer-social">
-						<div class="footer-social-item w3-small w3-btn w3-hover-white w3-transition-05 alien-shadow">
+						<div class="footer-social-item w3-small w3-btn w3-hover-white w3-transition-05 alien-shadow-default w3-hover-text-blue">
 							<i class="fa fa-facebook"></i>
 						</div>
-						<div class="footer-social-item w3-small w3-btn w3-hover-white w3-transition-05 alien-shadow">
+						<div class="footer-social-item w3-small w3-btn w3-hover-white w3-transition-05 alien-shadow-default w3-hover-text-red">
 							<i class="fa fa-pinterest"></i>
 						</div>
-						<div class="footer-social-item w3-small w3-btn w3-hover-white w3-transition-05 alien-shadow">
+						<div class="footer-social-item w3-small w3-btn w3-hover-white w3-transition-05 alien-shadow-default w3-hover-text-cyan">
 							<i class="fa fa-linkedin"></i>
 						</div>
-						<div class="footer-social-item w3-small w3-btn w3-hover-white w3-transition-05 alien-shadow">
+						<div class="footer-social-item w3-small w3-btn w3-hover-white w3-transition-05 alien-shadow-default w3-hover-text-red">
 							<i class="fa fa-instagram"></i>
 						</div>
-						<div class="footer-social-item w3-small w3-btn w3-hover-white w3-transition-05 alien-shadow">
+						<div class="footer-social-item w3-small w3-btn w3-hover-white w3-transition-05 alien-shadow-default">
 							<i class="fa fa-google"></i>
 						</div>
 					</div>
@@ -116,16 +289,16 @@
 					</div>
 					<br>
 					<div class="footer-tag-container">
-						<div class="tag-container alien-shadow w3-transition-05 w3-cursor"> design </div>
-						<div class="tag-container alien-shadow w3-transition-05 w3-cursor"> fashion </div>
-						<div class="tag-container alien-shadow w3-transition-05 w3-cursor"> music </div>
-						<div class="tag-container alien-shadow w3-transition-05 w3-cursor"> video </div>
-						<div class="tag-container alien-shadow w3-transition-05 w3-cursor"> party </div>
-						<div class="tag-container alien-shadow w3-transition-05 w3-cursor"> photography </div>
-						<div class="tag-container alien-shadow w3-transition-05 w3-cursor"> adventure </div>
-						<div class="tag-container alien-shadow w3-transition-05 w3-cursor"> travel </div>
-						<div class="tag-container alien-shadow w3-transition-05 w3-cursor"> xplore </div><br>
-						<div class="tag-container alien-shadow w3-transition-05 w3-cursor"> cinematography </div>
+						<div class="tag-container alien-shadow w3-transition-05 w3-cursor btn-shine"> design </div>
+						<div class="tag-container alien-shadow w3-transition-05 w3-cursor btn-shine"> fashion </div>
+						<div class="tag-container alien-shadow w3-transition-05 w3-cursor btn-shine"> music </div>
+						<div class="tag-container alien-shadow w3-transition-05 w3-cursor btn-shine"> video </div>
+						<div class="tag-container alien-shadow w3-transition-05 w3-cursor btn-shine"> party </div>
+						<div class="tag-container alien-shadow w3-transition-05 w3-cursor btn-shine"> photography </div>
+						<div class="tag-container alien-shadow w3-transition-05 w3-cursor btn-shine"> adventure </div>
+						<div class="tag-container alien-shadow w3-transition-05 w3-cursor btn-shine"> travel </div>
+						<div class="tag-container alien-shadow w3-transition-05 w3-cursor btn-shine"> xplore </div><br>
+						<div class="tag-container alien-shadow w3-transition-05 w3-cursor btn-shine"> cinematography </div>
 					</div>
 				</div>
 

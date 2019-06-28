@@ -3,7 +3,7 @@
     Home | {{ config('app.name', 'Laravel') }}
 @endsection
 @section('content')
-    <section class="zoom" style="margin-top:-125px;z-index: -99">
+    <section class="zoom w3-animate-opacity" style="margin-top:-125px;z-index: -99">
         <img src="{{ asset('images/text.png')}}" class="text">
         <img src="{{ asset('images/mountain1.png')}}" class="layer1">
         <img src="{{ asset('images/mountain2.png')}}" class="layer2">
@@ -59,11 +59,11 @@
                             </span>
                         </div>
 
-                        <div class="w3-display-bottommiddle w3-center w3-margin-bottom">
+                        <a href="/1/view" class="w3-display-bottommiddle w3-center w3-margin-bottom">
                             <div class="w3-btn w3-round-xxlarge w3-text-white w3-transition-05 w3-border w3-border-white w3-hover-white see-more-btn">
                                 See More
                             </div>
-                        </div>
+                        </a>
                     </div>       
                 </div>
                 <div class="w3-col l4 m6 s12">
@@ -90,11 +90,11 @@
                                 </div>
                             </span>
                         </div>
-                        <div class="w3-display-bottommiddle w3-center w3-margin-bottom">
+                        <a href="/2/view" class="w3-display-bottommiddle w3-center w3-margin-bottom">
                             <div class="w3-btn w3-round-xxlarge w3-text-white w3-transition-05 w3-border w3-border-white w3-hover-white see-more-btn">
                                 See More
                             </div>
-                        </div>
+                        </a>
                     </div>       
                 </div>
                 <div class="w3-col l4 m6 s12">
@@ -120,11 +120,11 @@
                                 </div>
                             </span>
                         </div>
-                        <div class="w3-display-bottommiddle w3-center w3-margin-bottom">
+                        <a href="/3/view" class="w3-display-bottommiddle w3-center w3-margin-bottom">
                             <div class="w3-btn w3-round-xxlarge w3-text-white w3-transition-05 w3-border w3-border-white w3-hover-white see-more-btn">
                                 See More
                             </div>
-                        </div>
+                        </a>
                     </div>       
                 </div>
             </div> {{-- inside row ends --}}
@@ -167,11 +167,11 @@
                             </span>
                         </div>
 
-                        <div class="w3-display-bottommiddle w3-center w3-margin-bottom">
+                        <a href="/4/view" class="w3-display-bottommiddle w3-center w3-margin-bottom">
                             <div class="w3-btn w3-round-xxlarge w3-text-white w3-transition-05 w3-border w3-border-white w3-hover-white see-more-btn">
                                 See More
                             </div>
-                        </div>
+                        </a>
                     </div>       
                 </div>
                 <div class="w3-col l4 m6 s12">
@@ -198,11 +198,11 @@
                                 </div>
                             </span>
                         </div>
-                        <div class="w3-display-bottommiddle w3-center w3-margin-bottom">
+                        <a href="/5/view" class="w3-display-bottommiddle w3-center w3-margin-bottom">
                             <div class="w3-btn w3-round-xxlarge w3-text-white w3-transition-05 w3-border w3-border-white w3-hover-white see-more-btn">
                                 See More
                             </div>
-                        </div>
+                        </a>
                     </div>       
                 </div>
                 <div class="w3-col l4 m6 s12">
@@ -228,11 +228,11 @@
                                 </div>
                             </span>
                         </div>
-                        <div class="w3-display-bottommiddle w3-center w3-margin-bottom">
+                        <a href="/6/view" class="w3-display-bottommiddle w3-center w3-margin-bottom">
                             <div class="w3-btn w3-round-xxlarge w3-text-white w3-transition-05 w3-border w3-border-white w3-hover-white see-more-btn">
                                 See More
                             </div>
-                        </div>
+                        </a>
                     </div>       
                 </div>
             </div> {{-- inside row ends --}}
@@ -243,8 +243,201 @@
     </div>{{-- main w3-row ends --}}
     <br>
     <br>
-    <hr style="border:1.2px solid rgba(0,0,0,0.5)">
     <br>
+    <div class="w3-padding-64 w3-light-grey">
+        <br>
+        <div class="w3-center w3-jumbo w3-padding w3-font-kaushan">
+            <b>The best offers with room</b>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="w3-row">
+            <div class="w3-col l1 m12 s12">
+                <br>
+            </div>
+            <div class="w3-col l10 m12 s12">
+                <div class="w3-row">
+                    <div class="w3-col l3 m6 s12 offer-cont-1">
+                        <div class="w3-display-container offer-cont-2">
+                            <img src="{{asset('images/offer_1.jpg')}}" class="offer-cont-image-1" alt="loading..">
+                            <div class="w3-display-bottomleft w3-orange w3-text-white offer-cont-3">
+                                <b>GRAND CASTLE</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-col l3 m6 s12">
+                        <div class="w3-padding">
+                            <div class="w3-xxlarge w3-text-orange">
+                                <span class="fa fa-inr"></span> 1100 <span class="w3-tiny w3-opacity w3-text-black"> per night</span>
+                            </div>
+                            <span class="score w3-left w3-small">
+                                <div class="score-wrap">
+                                    <span class="stars-active" style="width:100%">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                            </span>
+                            <br>
+                            <p class="w3-opacity">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quidem sunt vero rerum sit voluptates aperiam vitae non, itaque labore ullam.
+                            </p>
+                            <div class="w3-opacity-max">
+                                <i class="fa fa-map-signs offer-cont-icon"></i>
+                                <i class="fa fa-globe offer-cont-icon"></i>
+                                <i class="fa fa-bicycle offer-cont-icon"></i>
+                                <i class="fa fa-binoculars offer-cont-icon"></i>
+                                <i class="fa fa-ship offer-cont-icon"></i>
+                            </div>
+                            <br>
+                            <b>READ MORE</b>
+                        </div>
+                    </div>
+                    <div class="w3-col l3 m6 s12 offer-cont-1">
+                        <div class="w3-display-container offer-cont-2">
+                            <img src="{{asset('images/offer_2.jpg')}}" class="offer-cont-image-1" alt="loading..">
+                            <div class="w3-display-bottomleft w3-orange w3-text-white offer-cont-3">
+                                <b>TURKEY HILLS</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-col l3 m6 s12">
+                        <div class="w3-padding">
+                            <div class="w3-xxlarge w3-text-orange">
+                                <span class="fa fa-inr"></span> 1500 <span class="w3-tiny w3-opacity w3-text-black"> per night</span>
+                            </div>
+                            <span class="score w3-left w3-small">
+                                <div class="score-wrap">
+                                    <span class="stars-active" style="width:100%">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                            </span>
+                            <br>
+                            <p class="w3-opacity">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quidem sunt vero rerum sit voluptates aperiam vitae non, itaque labore ullam.
+                            </p>
+                            <div class="w3-opacity-max">
+                                <i class="fa fa-map-signs offer-cont-icon"></i>
+                                <i class="fa fa-globe offer-cont-icon"></i>
+                                <i class="fa fa-bicycle offer-cont-icon"></i>
+                                <i class="fa fa-binoculars offer-cont-icon"></i>
+                                <i class="fa fa-ship offer-cont-icon"></i>
+                            </div>
+                            <br>
+                            <b>READ MORE</b>
+                        </div>
+                    </div>
+                </div>
+            </div>{{-- rooms container col l10 here --}}
+            <div class="w3-col l1 m12 s12">
+                <br>
+            </div>
+        </div>{{-- rooms container ends here --}}
+        <br>
+        <br>
+        <div class="w3-row">
+            <div class="w3-col l1 m12 s12">
+                <br>
+            </div>
+            <div class="w3-col l10 m12 s12">
+                <div class="w3-row">
+                    <div class="w3-col l3 m6 s12 offer-cont-1">
+                        <div class="w3-display-container offer-cont-2">
+                            <img src="{{asset('images/offer_3.jpg')}}" class="offer-cont-image-1" alt="loading..">
+                            <div class="w3-display-bottomleft w3-orange w3-text-white offer-cont-3">
+                                <b>ISLAND DREAM</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-col l3 m6 s12">
+                        <div class="w3-padding">
+                            <div class="w3-xxlarge w3-text-orange">
+                                <span class="fa fa-inr"></span> 2200 <span class="w3-tiny w3-opacity w3-text-black"> per night</span>
+                            </div>
+                            <span class="score w3-left w3-small">
+                                <div class="score-wrap">
+                                    <span class="stars-active" style="width:100%">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                            </span>
+                            <br>
+                            <p class="w3-opacity">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quidem sunt vero rerum sit voluptates aperiam vitae non, itaque labore ullam.
+                            </p>
+                            <div class="w3-opacity-max">
+                                <i class="fa fa-map-signs offer-cont-icon"></i>
+                                <i class="fa fa-globe offer-cont-icon"></i>
+                                <i class="fa fa-bicycle offer-cont-icon"></i>
+                                <i class="fa fa-binoculars offer-cont-icon"></i>
+                                <i class="fa fa-ship offer-cont-icon"></i>
+                            </div>
+                            <br>
+                            <b>READ MORE</b>
+                        </div>
+                    </div>
+                    <div class="w3-col l3 m6 s12 offer-cont-1">
+                        <div class="w3-display-container offer-cont-2">
+                            <img src="{{asset('images/offer_4.jpg')}}" class="offer-cont-image-1" alt="loading..">
+                            <div class="w3-display-bottomleft w3-orange w3-text-white offer-cont-3">
+                                <b>TRAVEL LIGHT</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-col l3 m6 s12">
+                        <div class="w3-padding">
+                            <div class="w3-xxlarge w3-text-orange">
+                                <span class="fa fa-inr"></span> 3500 <span class="w3-tiny w3-opacity w3-text-black"> per night</span>
+                            </div>
+                            <span class="score w3-left w3-small">
+                                <div class="score-wrap">
+                                    <span class="stars-active" style="width:100%">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                            </span>
+                            <br>
+                            <p class="w3-opacity">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quidem sunt vero rerum sit voluptates aperiam vitae non, itaque labore ullam.
+                            </p>
+                            <div class="w3-opacity-max">
+                                <i class="fa fa-map-signs offer-cont-icon"></i>
+                                <i class="fa fa-globe offer-cont-icon"></i>
+                                <i class="fa fa-bicycle offer-cont-icon"></i>
+                                <i class="fa fa-binoculars offer-cont-icon"></i>
+                                <i class="fa fa-ship offer-cont-icon"></i>
+                            </div>
+                            <br>
+                            <b>READ MORE</b>
+                        </div>
+                    </div>
+                </div>
+            </div>{{-- rooms container col l10 here --}}
+            <div class="w3-col l1 m12 s12">
+                <br>
+            </div>
+        </div>{{-- rooms container ends here --}}
+        <br>
+        <br>
+        <br>
+    </div>
     @include('searchBox')
     <script>
         $(document).on("click",".logo-main",function(){
